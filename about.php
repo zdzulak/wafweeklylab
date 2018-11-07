@@ -14,18 +14,9 @@
 			<img src="images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-			<!-- Global site navigation -->
-			<nav>
-				<ul>
-					<li><a href="index.php" title="Go to the Home page">Home</a></li>
-					<li><a href="red.php" title="Learn about red blocks">Red Blocks</a></li>
-					<li><a href="blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
-					<li><a href="yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
-					<li><a href="green.php" title="Learn about green blocks">Green Blocks</a></li>
-					<li><a href="about.php" title="Learn about us">About Us</a></li>
-
-				</ul>
-			</nav>
+<?php
+	require $_SERVER['DOCUMENT_ROOT'].'\includes\global-nav.php';
+?>
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -40,10 +31,9 @@
 		</main>
 		<!-- Page-level footer -->
 		<footer>
-			<nav>
-				<a href="about/privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="about/privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a> | <a href="about/terms-of-use.php" title="Learn about our terms of use">Terms of Use</a> |
-				<a href="about/terms-of-use.php#limitation-liability" title="Read our Limitation Liabilities">Limitation Liability</a>
-			</nav>
+<?php
+	require $_SERVER['DOCUMENT_ROOT'].'\includes\footer-nav.php';
+?>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>
 	</body>

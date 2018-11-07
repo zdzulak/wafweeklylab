@@ -14,20 +14,9 @@
 			<img src="../images/html-logo.svg" height="75" width="75" alt="HTML" />
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
-			<!-- Global site navigation -->
-			<nav>
-				<ul>
-<!-- STEP 9a: Notice how none of the below links work - this is because the path to the pages is not correct - from here, we need to navigate UP out of the 'about' folder in the file system -->
-					<li><a href="../index.php" title="Go to the Home page">Home</a></li>
-					<li><a href="../red.php" title="Learn about red blocks">Red Blocks</a></li>
-					<li><a href="../blue.php" title="Learn about blue blocks">Blue Blocks</a></li>
-					<li><a href="../yellow.php" title="Learn about yellow blocks">Yellow Blocks</a></li>
-					<li><a href="../green.php" title="Learn about green blocks">Green Blocks</a></li>
-					<li><a href="../about.php" title="Learn about us">About Us</a></li>
-
-<!-- STEP 9b: Fix each of the above href paths to point up out of the current directory with "../" - for example, to go up and back to the index.php (Home page), href="../index.php" would do the trick -->
-				</ul>
-			</nav>
+<?php
+	require $_SERVER['DOCUMENT_ROOT'].'\includes\global-nav.php';
+?>
 		</header>
 		<!-- Page-level main content -->
 		<main>
@@ -52,12 +41,9 @@
 		</main>
 		<!-- Page-level footer -->
 		<footer>
-			<nav>
-<!-- STEP 9c: The below links don't work for the same reasons as the NAV in the HEADER - the href paths are wrong - we are ALREADY inside the 'about' folder, so the "about/" is not needed - remove it from the below two links, then try it out in a browser -->
-				<a href="privacy-policy.php" title="Read our Privacy Policy">Privacy Policy</a> | <a href="privacy-policy.php#personal-information" title="Learn about how we treat your personal information">Use of Personal Information</a> | <a href="terms-of-use.php" title="Learn about our terms of use">Terms of Use</a> |
-				<a href="terms-of-use.php#limitation-liability" title="Read our Limitation Liabilities">Limitation Liability</a>
-<!-- STEP 10: Ensure ALL of the NAV element links in both the HEADER and FOOTER of all of the pages are working properly - well done! -->
-			</nav>
+<?php
+	require $_SERVER['DOCUMENT_ROOT'].'\includes\footer-nav.php';
+?>
 			<p><small>© HTML, CSS, and JS Blocks Inc.</small></p>
 		</footer>
 	</body>
